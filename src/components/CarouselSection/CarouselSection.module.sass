@@ -1,0 +1,345 @@
+@import "../../styles-global/mixins"
+
+.CarouselSection
+  display: flex
+  flex-direction: column
+  margin-top: 7vw
+
+  &__text
+    display: flex
+    width: 90vw
+    flex-direction: row
+    align-items: flex-start
+    gap: 2vw
+    color: #404040
+    margin-left: 4.5vw
+
+
+    &__header
+      font-size: 24px
+      font-weight: 700
+      font-family: Inter, sans-serif
+      line-height: 29px
+      width: 308px
+
+      &__wrapper
+        display: flex
+        width: 50%
+        justify-content: flex-end
+
+    &__plaintext
+      font-size: 16px
+      font-weight: 700
+      font-family: Inter, sans-serif
+      line-height: 19px
+      width: 50%
+      text-align: start
+
+.CarouselSection__product
+  right: 0
+  width: 100%
+  aspect-ratio: 1824/450
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 7%
+
+  &__dignities
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__dignitiesConfidence_1
+    display: flex
+    flex-direction: column
+    height: 11vw
+    width: 11vw
+    border-radius: 27px
+    background-color: #EAC5C5
+
+    &Img
+      margin-top: 13.5%
+      margin-left: 14.2%
+      width: 48%
+
+    &Text
+      margin-top: 9%
+      margin-left: 14.2%
+      font-family: Inter, sans-serif
+      font-size: 14px
+      font-weight: 600
+      line-height: 13px
+      letter-spacing: 0
+      color: white
+      text-align: left
+
+  &__dignitiesConfidence_2
+    display: flex
+    flex-direction: column
+    height: 11vw
+    width: calc(11vw * 1.97)
+    border-radius: 27px
+    background-color: #E0EAC5
+
+    &Img
+      margin-top: 6.85%
+      margin-left: 7.18%
+      width: 24.11%
+
+    &Text
+      margin-top: 4.6%
+      margin-left: 7.18%
+      font-family: Inter, sans-serif
+      font-size: 14px
+      font-weight: 600
+      line-height: 13px
+      letter-spacing: 0
+      color: white
+      text-align: left
+
+.topSection
+  &__controlsWrap
+    margin-top: 3vw
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+  &__contactButton
+    width: 48%
+    aspect-ratio: 329/153
+    background-color: #404040
+    border-radius: 27px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    padding: 3%
+
+    span
+      color: white
+
+      &:first-child
+        align-self: flex-start
+        font-size: 1.2vw
+        font-weight: 700
+        line-height: 1.5vw
+
+      &:last-child
+        align-self: flex-end
+        font-size: 2vw
+        font-weight: 900
+
+  &__purchaseButton
+    width: 48%
+    aspect-ratio: 329/153
+    background-color: #3F6FEC
+    border-radius: 27px
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    padding-bottom: 3%
+    padding-right: 3%
+
+    span
+      color: white
+      font-size: 2vw
+      font-weight: 900
+
+  &__descriptionWrap
+    width: 100%
+    color: #404040
+    margin-top: 7vw
+    font-size: 1.5vw
+    font-weight: 500
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    span:first-child
+      width: 30%
+      font-weight: 700
+
+    span:last-child
+      width: 70%
+
+  &__portfolioWrap
+    width: 100%
+    height: 27vw
+    margin-top: 7vw
+    overflow-x: hidden
+
+  &__workWrap1
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 80%
+
+  &__workWrap2
+    width: 21.5%
+    margin-right: -4.9vw
+
+  &__subWrap1
+    width: 35%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__work11
+    width: 60%
+    aspect-ratio: 457/328
+    background: url("../../assets/img/mosque.png") no-repeat
+    background-size: cover
+    border-radius: 27px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: flex-start
+    color: #FFF
+    font-size: 1.5vw
+    font-family: Inter
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    padding-bottom: 3%
+    padding-left: 3%
+
+    span
+      font-size: 3.2vw
+      font-weight: 700
+
+  &__work21
+    width: 100%
+    height: 100%
+    background: url("../../assets/img/about_2.png") no-repeat
+    background-size: cover
+    border-radius: 27px 0 0 27px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    color: #FFF
+    font-size: 1.5vw
+    font-family: Inter
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    padding-bottom: 10%
+    padding-left: 10%
+
+    span
+      &:first-child
+        font-size: 5vw
+        font-weight: 700
+
+  &__nextButtonBlock
+    position: relative
+    width: 10vw
+    display: flex
+    flex-direction: column
+    gap: 0.3vw
+    margin-left: 76.5%
+    @media screen and (min-width: 1440px)
+      margin-top: -10.5%
+    @media screen and (min-width: 1920px)
+      margin-top: -10%
+
+    span
+      font-family: Inter
+      font-size: 0.9vw
+      font-weight: 500
+      color: #FFF
+      line-height: 1vw
+
+      br
+        @media screen and (min-width: 1920px)
+          display: none
+
+  &__nextButton
+    background: url("../../assets/img/Ellipse10.png") no-repeat, url("../../assets/img/Arrow.png") no-repeat
+    background-size: contain, 25% 25%
+    background-position: left top, center
+    width: 45%
+    aspect-ratio: 1/1
+
+  &__work12, &__work13
+    color: #FFF
+    font-size: 1.5vw
+    font-family: Inter
+    font-style: normal
+    font-weight: 600
+
+  &__work12
+    height: 49%
+    width: 61%
+    background-color: #EAC5C5
+    border-radius: 27px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    gap: 1.5vw
+    padding: 2% 10% 2% 10%
+
+    span:first-child
+      content: ""
+      background: url("../../assets/img/Group 2.png") no-repeat
+      background-size: contain
+      display: inline-block
+      width: 60px
+      height: 60px
+
+  &__work13
+    height: 48%
+    width: 100%
+    background-color: #E0EAC5
+    border-radius: 27px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    gap: 2vw
+    padding: 2% 10% 2% 10%
+
+    span:first-child
+      content: ""
+      background: url("../../assets/img/ceaser.png") no-repeat
+      background-size: contain
+      display: inline-block
+      width: 60px
+      height: 60px
+
+  &__work22
+    width: 100%
+    aspect-ratio: 93.8/70
+    background-color: #EAC5C5
+    border-radius: 27px 0 0 27px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2% 20% 2% 20%
+
+    span:first-child
+      content: ""
+      background: url("../../assets/img/Group 2.png") no-repeat
+      background-size: contain
+      display: inline-block
+      width: 60px
+      height: 60px
+
+  &__work23
+    width: 100%
+    aspect-ratio: 93.8/70
+    background-color: #E0EAC5
+    border-radius: 27px 0 0 27px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2% 20% 2% 20%
+
+    span:first-child
+      content: ""
+      background: url("../../assets/img/ceaser.png") no-repeat
+      background-size: contain
+      display: inline-block
+      width: 60px
+      height: 60px

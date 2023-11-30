@@ -1,0 +1,96 @@
+hr
+    width: 100%
+    border: 0.1px inset #404040
+
+.aboutSection
+    &__briefDescription
+        display: flex
+        justify-content: space-between
+        margin-top: 20vw
+        width: 100%
+        color: #404040
+        font-size: 2vw
+        font-family: Inter
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        span:first-child
+            width: 40%
+            color: #404040
+            font-size: 3vw
+            font-family: Inter
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            text-transform: uppercase
+
+
+    &__header
+        width: 100%
+        margin-top: 7vw
+        color: #404040
+        font-size: 8.5vw
+        font-family: Inter
+        font-style: normal
+        font-weight: 400
+        line-height: 77%
+
+    &__columnBlock
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+    &__column
+        width: 48%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+    &__img
+        margin-top: 5vw
+        width: 100%
+        border-radius: 27px
+        object-fit: cover
+
+    &__offsetLeftImg
+        border-radius: 0 27px 27px 0
+        margin-left: -7.5vw
+
+    &__video1, &__video2
+        margin-top: 5vw
+        width: 100%
+        aspect-ratio: 330/496
+        object-fit: cover
+        border-radius: 27px
+        height: 95%
+
+    &__video1
+        background-image: url("../../../../assets/img/Rectangle 38.png")
+        background-size: cover
+    &__video2
+        background-image: url("../../../../assets/img/Rectangle 37.png")
+        background-size: cover
+
+    &__textBlock
+        width: 100%
+        p
+            color: #404040
+            font-size: 2vw
+            font-family: Inter
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            &:not(:first-child)
+                margin-top: 4vw
+
+    &__blockWrapper
+        margin-top: 3vw
+
+    &__subHeader
+        color: #404040
+        font-size: 2.8vw
+        font-family: Inter
+        font-style: normal
+        font-weight: 500
+        line-height: normal

@@ -1,0 +1,96 @@
+.CatalogSection
+  display: flex
+  flex-direction: column
+  margin-top: 9%
+
+  &__header
+    font-family: Inter, sans-serif
+    text-indent: 20.5%
+    font-size: 78px
+    font-weight: 900
+    line-height: 60px
+    text-align: left
+    color: #404040
+    margin-left: 8%
+  &__colorText
+    color: #4D5CE1
+  &__products
+    display: flex
+    gap: 66px
+
+    flex-direction: column
+  &__products__row1Wrap
+    width: 24%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__products__row1, &__products__row2, &__products__row3
+    padding: 0 4vw 0 4vw
+    justify-content: space-between
+    display: flex
+    flex-direction: row
+  &__products__row1
+    align-items: flex-end
+  &__products__row1__elemWrap
+    width: 24%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+
+  &__products__row1__fillerImgWrap
+    width: 100%
+    img
+      width: 100%
+      object-fit: contain
+
+  &__products__row1__elem
+    transition: all 0.3s linear
+    width: 100%
+    aspect-ratio: 427/500
+    border-radius: 27px
+    background: #f9f6fd
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      width: 85%
+      object-fit: contain
+
+  &__products__row1WideWrap
+    width: 50%
+
+  &__products__row1__elemBig
+    transition: all 0.3s linear
+    aspect-ratio: 1.9
+    width: 100%
+    height: 100%
+    border-radius: 27px
+    background: #f9f6fd
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      height: 100%
+      object-fit: contain
+
+  &__products__row1__text
+    font-family: Inter, sans-serif
+    font-size: 64px
+    font-weight: 900
+    line-height: 49px !important
+    letter-spacing: 0em
+    text-align: left
+    color: #4D5CE1
+  &__products__row1__elemText
+    margin-top: 1vw
+    font-family: Inter, sans-serif
+    font-size: 24px
+    font-weight: 700
+    line-height: 29px
+    letter-spacing: 0
+    text-align: left
+    color: #404040
+
+  &__products__row1__elemBig:hover, &__products__row1__elem:hover
+    transform: scale(103%)

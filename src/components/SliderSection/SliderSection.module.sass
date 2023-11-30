@@ -1,0 +1,76 @@
+@import "../../styles-global/mixins"
+
+.sectionSlider
+  width: 90vw
+  margin-left: 4.5vw
+  display: flex
+  flex-direction: row
+  justify-content: center
+  gap: 1vw
+  padding-top: 2%
+  &__buttons
+    width: 18%
+    display: flex
+    flex-direction: column
+    gap: 1vw
+    &__textAbout
+      right: -11%
+      bottom: -20%
+      position: relative
+      font-size: 24px
+      font-weight: 900
+      color: $colorWhite
+      font-family: Inter, sans-serif
+    &__textBuy
+      right: -18%
+      bottom: -34%
+      position: relative
+      font-size: 24px
+      font-weight: 900
+      color: $colorWhite
+      font-family: Inter, sans-serif
+    &__sp
+      display: inline-block
+      margin-left: 10%
+      margin-top: 5%
+      text-align: left
+      color: $colorWhite
+      top: -25%
+      position: relative
+      font-size: 14px
+      font-family: Inter, serif
+      font-style: normal
+      line-height: 143.023%
+      padding-right: 5%
+      @media screen and (min-width: 1700px)
+        padding-right: 5%
+      @media screen and (min-width: 1780px)
+        top: -28%
+      @media screen and (min-width: 1844px)
+        top: -27.5%
+        padding-right: 6%
+      @media screen and (min-width: 1866px)
+        top: -31%
+
+    &__pn
+      display: inline-block
+      font-weight: bolder
+
+
+  &__button__about
+    transition: all 0.4s linear
+    width: 100%
+    aspect-ratio: 1/1
+    border-radius: 27px
+    background-color: #404040
+  &__button__buy
+    transition: all 0.4s linear
+    width: 100%
+    aspect-ratio: 1/1
+    border-radius: 27px
+    background-color: #3F6FEC
+  &__button__buy:hover, &__button__about:hover
+    transform: scale(102.5%)
+@media screen and (max-width: 1440px)
+    .sectionSlider__buttons__textAbout, .sectionSlider__buttons__textBuy
+      font-size: 18px

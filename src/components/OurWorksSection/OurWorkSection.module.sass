@@ -1,0 +1,89 @@
+hr
+    border: 0.1px inset #404040
+
+.ourWorkSection
+    &__mainWrap
+        width: 90vw
+        margin-left: 4.5vw
+
+    &__header
+        margin-top: 10vw
+        color: #404040
+        font-size: 5vw
+        font-family: Inter
+        font-style: normal
+        font-weight: 900
+        line-height: 77%
+        span
+            margin-left: 20%
+            @media screen and (min-width: 1920px)
+                margin-left: 0
+        br
+            @media screen and (min-width: 1920px)
+                display: none
+
+    &__columnBlock
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+    &__column
+        width: 44vw
+        display: flex
+        flex-direction: column
+        &:last-child
+            @media screen and (min-width: 1440px)
+                margin-top: -13vw
+            @media screen and (min-width: 1920px)
+                margin-top: 0
+
+    &__img
+        margin-top: 8.8vw
+        width: 100%
+        border-radius: 27px
+        object-fit: cover
+
+
+    &__offsetImg
+        width: 48.5vw
+        border-radius: 0 27px 27px 0
+        margin-left: -4.5vw
+        margin-top: 5vw
+
+    &__video
+        margin-top: 5vw
+        width: 100%
+        object-fit: cover
+        border-radius: 27px
+        aspect-ratio: 1728/923
+
+    &__video
+        background-image: url("../../assets/img/Rectangle 37.png")
+        background-size: cover
+
+    &__textBlock
+        width: 100%
+        p
+            color: #404040
+            font-size: 1vw
+            font-family: Inter
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            &:not(:first-child)
+                margin-top: 2vw
+            ul
+                list-style-type: disc
+                padding-left: 30px
+
+    &__blockWrapper
+        margin-top: 1.25vw
+
+    &__subHeader
+        color: #404040
+        font-size: 2vw
+        font-family: Inter
+        font-style: normal
+        font-weight: 500
+        line-height: normal

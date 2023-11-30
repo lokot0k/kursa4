@@ -1,0 +1,88 @@
+.bottomSection
+    &__logo
+        margin-top: 10vw
+        width: 75%
+
+    &__header
+        margin-top: 9vw
+        color: #404040
+        font-size: 7.5vw
+        font-family: Arial
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+
+    &__controlsWrap
+        margin-top: 5vw
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+    &__contactButton
+        transition: all 0.4s linear
+        width: 40vw
+        aspect-ratio: 1/1
+        border: 1px solid #404040
+        border-radius: 27px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        padding-top: 5%
+        padding-bottom: 5%
+        span
+            color: #404040
+            &:first-child
+                font-size: 3.5vw
+                font-weight: 700
+            &:last-child
+                font-size: 4.5vw
+                font-weight: 900
+    &__purchaseButton
+        transition: all 0.4s linear
+        width: 40vw
+        aspect-ratio: 1/1
+        border: 1px solid #3F6FEC
+        border-radius: 27px
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        padding-bottom: 5%
+        padding-right: 6%
+        span
+            color: #404040
+            font-size: 4.5vw
+            font-weight: 900
+
+    &__download
+        margin-top: 3.5vw
+        transition: all 0.4s linear
+        width: 100%
+        aspect-ratio: 4/1
+        border: 1px solid #3F6FEC
+        border-radius: 27px
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        padding-bottom: 3%
+        padding-right: 5%
+        span
+            color: #404040
+            font-size: 4.5vw
+            font-weight: 900
+
+    &__textBlock
+        width: 100%
+        margin-top: 5vw
+        p
+            color: #404040
+            font-size: 3.5vw
+            font-family: Inter
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            &:not(:first-child)
+                margin-top: 4vw
+
+    &__contactButton:hover, &__purchaseButton:hover
+        transform: scale(103%)

@@ -1,0 +1,19 @@
+$button-radius: 5vw
+
+.watchButton
+    position: absolute
+    background-color: #E9E6E5
+    width: $button-radius
+    aspect-ratio: 1/1
+    border-radius: $button-radius
+    font-size: 0.8vw
+    text-align: center
+    line-height: $button-radius
+
+$size-multiplier: 0.8
+
+.clicked
+    width: calc($button-radius * $size-multiplier)
+    height: calc($button-radius * $size-multiplier)
+    border-radius: calc($button-radius * $size-multiplier)
+    line-height: calc($button-radius * $size-multiplier)

@@ -1,0 +1,42 @@
+@import "./styles-global/Colors"
+@import "styles-global/reset"
+@import "styles-global/Fonts"
+
+body
+  font-family: 'Inter', sans-serif
+  scroll-behavior: smooth
+
+video
+  //background-color: transparent
+  border-bottom: 1px solid transparent /* хак для предотвращения мелькания при загрузке на некоторых версиях ios */
+  &::-webkit-media-controls
+    display: none !important
+
+input[type="text"]
+  font-family: Inter, sans-serif
+  font-size: 32px
+  font-weight: 600
+  text-align: left
+  opacity: 50%
+  @media screen and (max-width: 768px)
+    font-size: 25px
+.carousel-indicators
+  top: 4%
+  justify-content: space-between
+  width: 26%
+  margin-left: 37%
+  margin-right: 37%
+
+@media screen and (max-width: 765px)
+  .carousel-indicators
+    width: 60%
+    margin-left: 20%
+    margin-right: 20%
+@media screen and (min-width: 768px) and (max-width: 1023px)
+  .carousel-indicators
+    width: 40%
+    margin-left: 30%
+    margin-right: 30%
+
+.carousel-indicators [data-mdb-target]
+  width: 60px

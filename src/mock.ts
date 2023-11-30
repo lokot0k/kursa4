@@ -1,0 +1,275 @@
+import {Category, Product, FullProduct, Subcategory} from "./store/types";
+import product1 from './assets/img/CatalogItems/product1.png'
+import product2 from './assets/img/CatalogItems/product2.png'
+import product3 from './assets/img/CatalogItems/product5.png'
+import product4 from './assets/img/CatalogItems/product4.png'
+import product7 from './assets/img/CatalogItems/product7.png'
+import product5 from './assets/img/CatalogItems/product5.png'
+import rect1 from './assets/img/Rectangle 37.png'
+import rect2 from './assets/img/Rectangle 68.png'
+import rect3 from './assets/img/Rectangle 69.png'
+import table from './assets/img/fake_table.png'
+
+
+const mockCategory: Category[] = [{
+    id: 0,
+    name: 'Бетонные лотки',
+    description: 'Что такое водоотводные лотки?\n' +
+        'Водоотводные лотки, прежде всего, - это необходимый элемент любой дренажной системы поверхностного типа, т.е. специальной конструкции, используемой для отведения излишков воды. В подобных дренажных системах водоотводные лотки выполняют роль канала, который собирает воду. Вода всегда являлась проблемой для зданий и иных сооружений.\n' +
+        'Не даром есть выражение: «вода камень точит», при недостаточном дренаже это превращается в подмывание и последующее разрушение фундамента здания, дорожных покрытий, ограждающих проезжую или пешеходную зону(бордюров).',
+    photo: product1,
+},
+    {
+        id: 1,
+        name: 'Пескоуловители',
+        description: 'Что такое пескоуселитилеи?\n' +
+
+            "Пескоуловитель – это элемент системы поверхностного дренажа, он устанавливается в самой нижней точке системы (от него начинают делать разметку для подключения дренажных каналов) и предназначается для сбора и устранения мелких взвешенных частиц, как песок, грунт, гравий и другой мусор.",
+        photo: product3,
+    },
+    {
+        id: 2,
+        name: 'Дождеприемники',
+        description: 'Что такое дождеприемник?\n' +
+
+            "Дождеприемник – это элемент системы поверхностного водоотведения, предназначенный для точечного водосбора поверхностных ливневых и талых вод. Дождеприемники применяются в точечной системе водоотвода и в комплексе с ливневой канализацией.",
+        photo: product4,
+    },
+]
+const mockSubcategories: Subcategory[] = [
+    {
+        id: 0,
+        categoryId: 0,
+        name: "Общего назначения",
+        description: "Лотки общего назначения с шириной гидравлического сечения 100 мм - самое экономичное и массовое",
+        photo: product1,
+    },
+    {
+        id: 1,
+        categoryId: 0,
+        name: "Серия MAXI",
+        description: "Это серии лотков из армированного бетона и полимербетона, усиленных стальными оцинкованными насадками",
+        photo: product2,
+    },
+    {
+        id: 2,
+        categoryId: 1,
+        name: "Общего назначения",
+        description: "Серия стандартных пескуловителей",
+        photo: product3,
+    },
+    {
+        id: 3,
+        categoryId: 1,
+        name: "Серия MAXI",
+        description: "Серия пескоуловителей из  бетона и полимербетона, очень хорошо фильтруют песок",
+        photo: product7,
+    },
+    {
+        id: 4,
+        categoryId: 2,
+        name: "Общего назначения",
+        description: "Серия дождеприемников подходящих для большинства мест",
+        photo: product4,
+    },
+    {
+        id: 5,
+        categoryId: 2,
+        name: "Усиленные дождеприемники",
+        description: "Серия более мощных дождеприемников для мест с большим скоплением воды",
+        photo: product5,
+    },
+
+]
+// @ts-ignore
+const mockProducts: Product[] | FullProduct[] = [
+
+        {
+            id: 0,
+            subcategoryId: 0,
+            partNumber: 1,
+            name: 'DN100',
+            description: 'Крутой лоток DN100, самый маленький',
+            mainPhoto: product1,
+            tablePhoto: table,
+            widthMm: 150,
+            heightMm: 250,
+            depthMm: 100,
+            bundling: '123',
+            weightKg: 50,
+            priceRub: 15,
+            // @ts-ignore
+            gallery: [rect1,rect2, rect3, rect1,rect2, rect3, rect1,rect2, rect3, rect1,rect2, rect3],
+        },
+
+    {
+        id: 1,
+        subcategoryId: 0,
+        partNumber: 1,
+        name: 'DN110',
+        description: 'Лоток лучше, чем DN100, выдерживает большие нагрузки',
+        mainPhoto: product1,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 2,
+        subcategoryId: 1,
+        partNumber: 1,
+        name: 'MAXI DN100',
+        description: 'Крутой лоток MAXI DN100, самый маленький из серии MAXI',
+        mainPhoto: product2,
+        tablePhoto: table,
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+        // @ts-ignore
+        gallery: [rect1,rect2, rect3, rect1,rect2, rect3, rect1,rect2, rect3, rect1,rect2, rect3],
+    },
+
+    {
+        id: 3,
+        subcategoryId: 1,
+        partNumber: 1,
+        name: 'MAXI DN110',
+        description: 'MAXI лоток. Лучше, чем MAXI DN100, выдерживает большие нагрузки',
+        mainPhoto: product2,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 4,
+        subcategoryId: 2,
+        partNumber: 1,
+        name: 'Пескоуловитель #1',
+        description: 'Пескоуловитель #1, первый в каталоге, а не по спецификациям',
+        mainPhoto: product3,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 5,
+        subcategoryId: 2,
+        partNumber: 1,
+        name: 'Пескоуловитель #2',
+        description: 'Пескоуловитель #2, тут и сказать нечего',
+        mainPhoto: product3,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 6,
+        subcategoryId: 3,
+        partNumber: 1,
+        name: 'Пескоуловитель SUPER #1',
+        description: 'Пескоуловитель SUPER #1, близок к лучшим существующим предложениям на рынке',
+        mainPhoto: product7,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 7,
+        subcategoryId: 3,
+        partNumber: 1,
+        name: 'Пескоуловитель SUPER #2',
+        description: 'Пескоуловитель SUPER #2, как SUPER #1, но лучше',
+        mainPhoto: product7,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 8,
+        subcategoryId: 4,
+        partNumber: 1,
+        name: 'Дождеприемник #1',
+        description: 'Отличный дождеприемник для вашего участка',
+        mainPhoto: product4,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 9,
+        subcategoryId: 4,
+        partNumber: 1,
+        name: 'Дождеприемник #2',
+        description: 'Отличный дождеприемник для вашей дачи',
+        mainPhoto: product4,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 10,
+        subcategoryId: 5,
+        partNumber: 1,
+        name: 'Дождеприемник PRO #1',
+        description: 'Отличный дождеприемник для вашей трассы, где скапливается много воды',
+        mainPhoto: product5,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+    {
+        id: 11,
+        subcategoryId: 5,
+        partNumber: 1,
+        name: 'Дождеприемник PRO #2',
+        description: 'Отличный дождеприемник для всего',
+        mainPhoto: product5,
+        tablePhoto: '',
+        widthMm: 150,
+        heightMm: 250,
+        depthMm: 100,
+        bundling: '123',
+        weightKg: 50,
+        priceRub: 15,
+    },
+]
+
+export {mockCategory, mockSubcategories, mockProducts}

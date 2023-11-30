@@ -1,0 +1,96 @@
+.bottomSection
+    &__topWrap
+        margin-top: 10vw
+        wdtih: 100%
+        display: flex
+        justify-content: space-between
+
+    &__logo
+        width: 30%
+        object-fit: contain
+
+    &__header
+        width: 65%
+        color: #404040
+        font-size: 4vw
+        font-family: Arial
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+
+    &__controlsWrap
+        margin-top: 5vw
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+    &__contactButton
+        transition: all 0.4s linear
+        width: 48%
+        aspect-ratio: 329/153
+        border: 1px solid #404040
+        border-radius: 27px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        padding-top: 3%
+        padding-bottom: 3%
+        padding-right: 5%
+        span
+            color: #404040
+            &:first-child
+                font-size: 1.2vw
+                line-heighT: 1.5vw
+            &:last-child
+                align-self: flex-end
+                font-size: 2vw
+                font-weight: 900
+
+    &__purchaseButton
+        transition: all 0.4s linear
+        width: 48%
+        aspect-ratio: 329/153
+        border: 1px solid #3F6FEC
+        border-radius: 27px
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        padding-bottom: 3%
+        padding-right: 5%
+        span
+            color: #404040
+            font-size: 2vw
+            font-weight: 900
+
+    &__download
+        margin-top: 3.5vw
+        transition: all 0.4s linear
+        width: 100%
+        aspect-ratio: 329/38
+        border: 1px solid #3F6FEC
+        border-radius: 27px
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        padding-bottom: 3%
+        padding-right: 5%
+        span
+            color: #404040
+            font-size: 2vw
+            font-weight: 900
+
+    &__textBlock
+        width: 100%
+        margin-top: 5vw
+        p
+            color: #404040
+            font-size: 2.2vw
+            font-family: Inter
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            &:not(:first-child)
+                margin-top: 4vw
+    &__contactButton:hover, &__purchaseButton:hover, &__download:hover
+        transform: scale(103%)
